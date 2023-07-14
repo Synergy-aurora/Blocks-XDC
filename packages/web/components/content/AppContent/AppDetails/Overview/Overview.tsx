@@ -22,7 +22,7 @@ import {
   getExplorerAddressUrl,
   getExplorerTxUrl,
   shortenHash,
-} from '@modules/blockchains/fantom/providers/walletProvider';
+} from '@modules/blockchains/Apothem/providers/walletProvider';
 import MessageDialogContext from '@components/context/MessageDialogContext';
 import DeployDialog from '@components/dialogs/DeployDialog/DeployDialog';
 import { Blockchains } from '@core/enums/blockchains';
@@ -235,7 +235,7 @@ export default function Overview({
       <DeployDialog
         show={showDeployDialog}
         app={currentApp}
-        blockchain={Blockchains.Fantom}
+        blockchain={Blockchains.Apothem}
         environment={deployEnvironment}
         onCancel={() => setShowDeployDialog(false)}
         onDeploy={(gasLimit, args) => deploy(gasLimit, args)}

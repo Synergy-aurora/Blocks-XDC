@@ -11,17 +11,17 @@ const Footer = () => {
             <div className={styles.brand}>
               <img
                 src="/assets/blockfabric/bf-logo-dark.svg"
-                alt="BlockFabric"
+                alt="Blocks"
               />
             </div>
             <p className={styles.appDescription}>
-              Block Fabric is a blockchain app manager that lets you create,
+              Blocks is a blockchain app manager that lets you create,
               manage and view analytics for all your smart contracts on the
               blockchain.
             </p>
             <div className={styles.label}>Connect with us</div>
             <div className={styles.followUs}>
-              <a href="mailto:blockfabricdev@gmail.com">
+              <a href="/#">
                 <img
                   src="/assets/icons/email.svg"
                   alt="Email"

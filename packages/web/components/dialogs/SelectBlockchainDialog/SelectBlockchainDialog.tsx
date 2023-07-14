@@ -27,9 +27,9 @@ export default function SelectBlockchainDialog({
       </Modal.Header>
       <Modal.Body>
         <div className={styles.selection}>
-          <a onClick={() => onSelect(Blockchains.Fantom)}>
-            <img src="/assets/icons/fantom-logo-round.svg" alt="FANTOM" />
-            <span>FANTOM</span>
+          <a onClick={() => onSelect(Blockchains.Apothem)}>
+            <img src="/assets/icons/fantom-logo-round.svg" alt="Apothem" />
+            <span>APOTHEM</span>
             <span className={styles.muted}>MetaMask</span>
           </a>
         </div>

@@ -8,7 +8,7 @@ interface PageHeadProps {
 
 const PageHead = ({ title }: PageHeadProps) => (
   <Head>
-    <title>{title ?? 'BlockFabric - Blockchain Smart Contracts Manager'}</title>
+    <title>{title ?? 'Blocks - Blockchain Smart Contracts Manager'}</title>
     <link rel="icon" href="/favicon.ico" />
     <link
       rel="stylesheet"
