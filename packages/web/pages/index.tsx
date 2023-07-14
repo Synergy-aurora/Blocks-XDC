@@ -32,9 +32,9 @@ const MainLanding: NextPage = () => {
                   Create . Deploy . View Insights
                 </div>
                 <p>
-                  Block Fabric is an advanced blockchain app manager that lets
+                  Blocks is an advanced blockchain app manager that lets
                   you create, deploy, manage and understand usage for your smart
-                  contracts on Fantom blockchain.
+                  contracts on XDC blockchain.
                 </p>
                 <div style={{ paddingTop: 30 }}>
                   <Button

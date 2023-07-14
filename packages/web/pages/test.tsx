@@ -27,7 +27,7 @@ const TestPage: NextPage = () => {
     // console.log('abi');
     // console.log(abi);
 
-    const blockchain = Blockchains.Fantom;
+    const blockchain = Blockchains.XDC;
     const walletAddress = 'testwallet1';
     const signature = 'testsignature1';
 
