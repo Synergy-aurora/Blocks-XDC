@@ -63,7 +63,7 @@ const MainLanding: NextPage = () => {
               <Col lg={7} md={12} sm={12}>
                 <div className="feature-image">
                   <img
-                    src="/assets/images/screenshot-create-app-details.png"
+                    src="/assets/images/screenshot.png"
                     alt="screenshot"
                     className="framed-image"
                   />
@@ -83,14 +83,7 @@ const MainLanding: NextPage = () => {
                     analytics for insightful app performance.
                   </p>
                 </div>
-                <div className="brand-logo-container">
-                  <img
-                    src="/assets/brands/xdc-logo-horizontal.png"
-                    alt="xdc logo"
-                    
-                    className="brand-logo"
-                  />
-                </div>
+               
               </Col>
             </Row>
           </div>

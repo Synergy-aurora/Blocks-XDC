@@ -67,9 +67,9 @@ const SideBar = ({
         <div className="sidebar">
           <a href="/">
             <img
-              src="/assets/blockfabric/bf-logo-dark.svg"
-              alt="BlockFabric"
-              width={150}
+              src="/assets/blocks/logo.png"
+              alt="Blocks"
+              width={110}
             />
           </a>
           {isLoading && (
