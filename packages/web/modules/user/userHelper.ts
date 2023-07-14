@@ -15,7 +15,7 @@ export const authenticateUser = async (
   try {
     let signature = '';
     if (blockchain === Blockchains.XDC) {
-      signature = await signXDCSignature('BlockFabric Login');
+      signature = await signXDCSignature('Blocks Login');
     } else {
       // Randomize signature to avoid predictability
       signature = generateUUID();
