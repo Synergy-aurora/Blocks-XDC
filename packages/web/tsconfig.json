@@ -27,6 +27,6 @@
       "@templates/*": ["contract-templates/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "../contract-templates/templates/CrowdSale.ts"],
   "exclude": ["node_modules"]
 }

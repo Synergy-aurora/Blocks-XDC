@@ -1,9 +1,9 @@
-import { Template } from '../types/template';
-import OpenZeppelinERC20 from '../packages/@openzeppelin/contracts/token/ERC20/ERC20';
-import OpenZeppelinIERC20 from '../packages/@openzeppelin/contracts/token/ERC20/IERC20';
-import OpenZeppelinIERC20Metadata from '../packages/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata';
-import OpenZeppelinContext from '../packages/@openzeppelin/contracts/utils/Context';
-import OpenZeppelinOwnable from '../packages/@openzeppelin/contracts/access/Ownable';
+import { Template } from '../../web/contract-templates/types/template';
+import OpenZeppelinERC20 from '../../web/contract-templates/packages/@openzeppelin/contracts/token/ERC20/ERC20';
+import OpenZeppelinIERC20 from '../../web/contract-templates/packages/@openzeppelin/contracts/token/ERC20/IERC20';
+import OpenZeppelinIERC20Metadata from '../../web/contract-templates/packages/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata';
+import OpenZeppelinContext from '../../web/contract-templates/packages/@openzeppelin/contracts/utils/Context';
+import OpenZeppelinOwnable from '../../web/contract-templates/packages/@openzeppelin/contracts/access/Ownable';
 
 export const CODE: string = `
 // SPDX-License-Identifier: {{license}}
@@ -60,7 +60,7 @@ export const TEMPLATE: Template = {
   templateId: '3',
   name: 'Crowd Sale Contract',
   description:
-    'A Crowd Sale Contract facilitates the raising of funds by selling a XRC20 token to investors at a specific price, in a defined timeframe, directly on the blockchain.',
+    'A Crowd Sale Contract facilitates the raising of funds by selling a ERC20 token to investors at a specific price, in a defined timeframe, directly on the blockchain.',
   tags: ['Token', 'CrowdSale'],
   code: CODE.trim(),
   inputs: [],
