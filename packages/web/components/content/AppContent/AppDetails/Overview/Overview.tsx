@@ -145,7 +145,7 @@ export default function Overview({
       } else {
         showMessage(
           'Deployment Incomplete',
-          'Your contract was deployed successfully but failed to update on BlockFabric.',
+          'Your contract was deployed successfully but failed to update on Blocks.',
         );
       }
 
