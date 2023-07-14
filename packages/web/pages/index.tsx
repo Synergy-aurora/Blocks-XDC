@@ -76,7 +76,7 @@ const MainLanding: NextPage = () => {
                     Just connect your wallet and you're good to go.
                   </h3>
                   <p className="paragraph">
-                    Block Fabric makes dapp creation a breeze. Create smart
+                    Blocks makes dapp creation a breeze. Create smart
                     contracts using preset templates without code, or create
                     your own custom template. Import existing contracts, manage
                     dapps centrally, and link multiple wallets. Leverage robust
@@ -85,8 +85,9 @@ const MainLanding: NextPage = () => {
                 </div>
                 <div className="brand-logo-container">
                   <img
-                    src="/assets/brands/fantom-logo-horizontal.png"
-                    alt="fantom"
+                    src="/assets/brands/xdc-logo-horizontal.png"
+                    alt="xdc logo"
+                    
                     className="brand-logo"
                   />
                 </div>

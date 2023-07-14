@@ -96,15 +96,15 @@ const DashboardPage: NextPage = () => {
   const handleOnConnectClick = async () => {
     if (!isXDCProviderAvailable()) {
       showMessage(
-        'Install MetaMask',
-        'MetaMask extension is not installed. Please install it from the Chrome Web Store.',
+        'Install XDCPay',
+        'XDCPay extension is not installed. Please install it from the Chrome Web Store.',
       );
       return;
     }
     if (!isXDCWalletReady()) {
       showMessage(
-        'Open MetaMask Extension First',
-        'MetaMask is not connected. Please open the extension and connect to a wallet.',
+        'Open XDC Pay Extension First',
+        'XDCPay is not connected. Please open the extension and connect to a wallet.',
       );
       return;
     }

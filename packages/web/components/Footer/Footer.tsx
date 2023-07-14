@@ -10,7 +10,7 @@ const Footer = () => {
           <Col lg={4} md={4}>
             <div className={styles.brand}>
               <img
-                src="/assets/blockfabric/bf-logo-dark.svg"
+                src="/assets/blocks/logo.png"
                 alt="Blocks"
               />
             </div>
