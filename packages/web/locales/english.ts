@@ -1,5 +1,5 @@
 export const en = {
-  fantom: {
+  xdc: {
     connectWalletTitle: 'Blocks › XDC',
     connectWalletSubtitle: 'Get connected to begin.',
     connectWalletDescription:

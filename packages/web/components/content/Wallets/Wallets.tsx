@@ -66,7 +66,7 @@ const Wallets = ({ blockchain, walletAddress }: WalletsProps) => {
                   key={index}
                   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                 >
-                  <TableCell>{row.blockchain}</TableCell>
+                  <TableCell>{blockchain}</TableCell>
                   <TableCell>{row.walletAddress}</TableCell>
                   <TableCell>{formatDate(row.createdDateUTC)}</TableCell>
                 </TableRow>

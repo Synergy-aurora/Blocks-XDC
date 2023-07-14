@@ -46,9 +46,9 @@ export const getWallet = async (): Promise<XDCWallet | null> => {
 };
 
 export const getNetwork = (): XDCNetworks => {
-  return window.ethereum.networkVersion === '50'
-    ? XDCNetworks.Mainnet
-    : XDCNetworks.Testnet;
+  return window.ethereum.networkVersion === '51'
+    ? XDCNetworks.Testnet
+    : XDCNetworks.Mainnet;
 };
 
 export const maskWalletAddress = (address: string): string => {
