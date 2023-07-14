@@ -8,11 +8,11 @@ import MessageDialogContext from '@components/context/MessageDialogContext';
 import MainPanel from '@components/MainPanel/MainPanel';
 import ConfirmDialog from '@components/dialogs/ConfirmDialog/ConfirmDialog';
 import {
-  isWalletConnected as isFantomWalletConnected,
-  getWallet as getFantomWallet,
-  connectWallet as connectFantomWallet,
-  isProviderAvailable as isFantomProviderAvailable,
-  isWalletReady as isFantomWalletReady,
+  isWalletConnected as isXDCWalletConnected,
+  getWallet as getXDCWallet,
+  connectWallet as connectXDCWallet,
+  isProviderAvailable as isXDCProviderAvailable,
+  isWalletReady as isXDCWalletReady,
 } from '@modules/blockchains/xdc/providers/walletProvider';
 import logger from '@core/logger/logger';
 import { Config } from '@core/config/config';
@@ -26,7 +26,7 @@ import localStorageHelper from '@core/storage/localStorageHelper';
 import { Environments } from '@core/enums/environments';
 
 const DashboardPage: NextPage = () => {
-  const blockchain = Blockchains.Fantom;
+  const blockchain = Blockchains.XDC;
 
   // States
   const [messageDialogTitle, setMessageDialogTitle] = useState('');
@@ -54,9 +54,9 @@ const DashboardPage: NextPage = () => {
       logger.logInfo('init', 'Checking wallet connection.');
 
       // Check if wallet is already connected via SDK
-      const walletConnected = await isFantomWalletConnected();
+      const walletConnected = await isXDCWalletConnected();
       if (walletConnected) {
-        const wallet = await getFantomWallet();
+        const wallet = await getXDCWallet();
 
         logger.logInfo('init', 'Wallet connected on address ' + walletAddress);
 
@@ -94,14 +94,14 @@ const DashboardPage: NextPage = () => {
   }, [walletAddress]);
 
   const handleOnConnectClick = async () => {
-    if (!isFantomProviderAvailable()) {
+    if (!isXDCProviderAvailable()) {
       showMessage(
         'Install MetaMask',
         'MetaMask extension is not installed. Please install it from the Chrome Web Store.',
       );
       return;
     }
-    if (!isFantomWalletReady()) {
+    if (!isXDCWalletReady()) {
       showMessage(
         'Open MetaMask Extension First',
         'MetaMask is not connected. Please open the extension and connect to a wallet.',
@@ -109,8 +109,8 @@ const DashboardPage: NextPage = () => {
       return;
     }
 
-    await connectFantomWallet();
-    const wallet = await getFantomWallet();
+    await connectXDCWallet();
+    const wallet = await getXDCWallet();
     const walletAddress = wallet?.address;
 
     if (walletAddress) {
