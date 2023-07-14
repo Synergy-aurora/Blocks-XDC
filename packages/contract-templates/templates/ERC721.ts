@@ -34,10 +34,10 @@ contract {{contractName}} is ERC721 {
 
 export const TEMPLATE: Template = {
   templateId: '2',
-  name: 'ERC721 NFT Contract',
+  name: 'XRC721 NFT Contract',
   description:
-    'ERC721 is an open standard for creating non-fungible tokens (NFTs) on the blockchain, allowing for the ownership and transfer of unique assets.',
-  tags: ['NFT', 'ERC721'],
+    'XRC721 is an open standard for creating non-fungible tokens (NFTs) on the blockchain, allowing for the ownership and transfer of unique assets.',
+  tags: ['NFT', 'XRC721'],
   code: CODE.trim(),
   inputs: [
     {

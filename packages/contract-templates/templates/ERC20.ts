@@ -19,10 +19,10 @@ contract {{contractName}} is ERC20 {
 
 export const TEMPLATE: Template = {
   templateId: '1',
-  name: 'ERC20 Token Contract',
+  name: 'XRC20 Token Contract',
   description:
-    'ERC20 is an standard for fungible assets, outlining a common list of rules for tokens to follow, enabling interoperability across different interfaces and dApps.',
-  tags: ['Token', 'ERC20'],
+    'XRC20 is an standard for fungible assets, outlining a common list of rules for tokens to follow, enabling interoperability across different interfaces and dApps.',
+  tags: ['Token', 'XRC20'],
   code: CODE.trim(),
   inputs: [
     {
