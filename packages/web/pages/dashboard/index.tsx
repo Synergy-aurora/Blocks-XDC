@@ -13,7 +13,7 @@ import {
   connectWallet as connectFantomWallet,
   isProviderAvailable as isFantomProviderAvailable,
   isWalletReady as isFantomWalletReady,
-} from '@modules/blockchains/fantom/providers/walletProvider';
+} from '@modules/blockchains/xdc/providers/walletProvider';
 import logger from '@core/logger/logger';
 import { Config } from '@core/config/config';
 import {

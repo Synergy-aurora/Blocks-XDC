@@ -1,7 +1,7 @@
 declare let window: any;
 import Web3 from 'web3';
 
-export const signFantomSignature = async (message: string): Promise<string> => {
+export const signXDCSignature = async (message: string): Promise<string> => {
   const ethereum = window.ethereum;
   if (ethereum && ethereum.isMetaMask) {
     const web3 = new Web3(ethereum);
@@ -18,14 +18,14 @@ export const signFantomSignature = async (message: string): Promise<string> => {
   }
 };
 
-export const verifyFantomSignature = async (
+export const verifyXDCSignature = async (
   message: string,
   signature: string,
   address: string,
 ): Promise<boolean> => {
-  console.log('verifyFantomSignature');
+  console.log('verifyXDCSignature');
 
-  const web3 = new Web3('https://rpc.ftm.tools'); // Fantom RPC
+  const web3 = new Web3('https://rpc.apothem.network'); // XDC RPC
 
   const messageHash = web3.utils.sha3(message);
   const pubKey = web3.eth.accounts.recover(messageHash, signature);

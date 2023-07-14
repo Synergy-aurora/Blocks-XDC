@@ -8,6 +8,6 @@ export interface AppConfig {
 export const Config: AppConfig = {
   environment: process.env.NEXT_PUBLIC_ENVIRONMENT || 'testnet',
   jwtSecret: process.env.JWT_SECRET || 'jwtsecret',
-  mainnetUrl: 'https://www.blockfabric.dev',
-  testnetUrl: 'https://testnet.blockfabric.dev',
+  mainnetUrl: '',
+  testnetUrl: '',
 };

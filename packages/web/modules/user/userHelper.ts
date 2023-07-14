@@ -1,7 +1,7 @@
 import logger from '@core/logger/logger';
 import { Blockchains } from '@core/enums/blockchains';
 import { generateUUID } from '@core/helpers/generateHelper';
-import { signFantomSignature } from '@modules/blockchains/fantom/verification/verification';
+import { signFantomSignature } from '@modules/blockchains/xdc/verification/verification';
 import { signInUser } from '@services/web/userService';
 import localStorageHelper from '@core/storage/localStorageHelper';
 

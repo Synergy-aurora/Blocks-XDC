@@ -1,5 +1,5 @@
 import { Blockchains } from '@core/enums/blockchains';
-import { FantomNetworks } from './fantom/providers/walletProvider';
+import { FantomNetworks } from './xdc/providers/walletProvider';
 
 const blockchainNetworks = {
   testnet: {

@@ -4,7 +4,7 @@ import { generateToken } from '@modules/jwt/jwtHelper';
 import { generateUUID } from '@core/helpers/generateHelper';
 import { Blockchains } from '@core/enums/blockchains';
 import { FirestoreDB } from '@modules/firebase/firestore';
-import { verifyFantomSignature } from '@modules/blockchains/fantom/verification/verification';
+import { verifyXDCSignature } from '@modules/blockchains/xdc/verification/verification';
 import { UserWallet } from '@core/entities/userWallet';
 import { getCurrentTimestamp } from '@core/helpers/datetimeHelper';
 
@@ -23,8 +23,8 @@ export const apiSignInUser = async (
     const { blockchain, walletAddress, signature } = params;
 
     if (blockchain === Blockchains.Fantom) {
-      const message = 'BlockFabric Login';
-      const isSignatureValid = verifyFantomSignature(
+      const message = 'Blocks Login';
+      const isSignatureValid = verifyXDCSignature(
         message,
         signature,
         walletAddress,
