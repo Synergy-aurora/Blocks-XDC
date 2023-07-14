@@ -23,17 +23,17 @@ export const isWalletConnected = (): boolean => {
   return window.ethereum?.selectedAddress;
 };
 
-export interface FantomWallet {
+export interface XDCWallet {
   address: string;
-  network: FantomNetworks;
+  network: XDCNetworks;
 }
 
-export enum FantomNetworks {
-  Mainnet = 'Mainnet',
-  Testnet = 'Testnet',
+export enum XDCNetworks {
+  Mainnet = 'XinFin',
+  Testnet = 'Apothem',
 }
 
-export const getWallet = async (): Promise<FantomWallet | null> => {
+export const getWallet = async (): Promise<XDCWallet | null> => {
   const isConnected = isWalletConnected();
   if (isConnected) {
     return {
@@ -45,10 +45,10 @@ export const getWallet = async (): Promise<FantomWallet | null> => {
   }
 };
 
-export const getNetwork = (): FantomNetworks => {
-  return window.ethereum.networkVersion === '250'
-    ? FantomNetworks.Mainnet
-    : FantomNetworks.Testnet;
+export const getNetwork = (): XDCNetworks => {
+  return window.ethereum.networkVersion === '50'
+    ? XDCNetworks.Mainnet
+    : XDCNetworks.Testnet;
 };
 
 export const maskWalletAddress = (address: string): string => {
@@ -78,10 +78,10 @@ export const getExplorerAddressUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.Testnet) {
-    return `https://testnet.ftmscan.com/address/${hash}`;
+    return `https://explorer.apothem.network/address/${hash}`;
   }
   if (environment === Environments.Mainnet) {
-    return `https://ftmscan.com/address/${hash}`;
+    return `https://explorer.xinfin.network/address/${hash}`;
   }
   return null;
 };
@@ -91,10 +91,10 @@ export const getExplorerTxUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.Testnet) {
-    return `https://testnet.ftmscan.com/tx/${hash}`;
+    return `https://explorer.apothem.network/tx/${hash}`;
   }
   if (environment === Environments.Mainnet) {
-    return `https://ftmscan.com/tx/${hash}`;
+    return `https://explorer.xinfin.network/tx/${hash}`;
   }
   return null;
 };
@@ -128,9 +128,9 @@ export const deployContract = async (
   // check if the network matches the selected environment
   if (
     (environment === Environments.Testnet &&
-      currentNetwork !== FantomNetworks.Testnet) ||
+      currentNetwork !== XDCNetworks.Testnet) ||
     (environment === Environments.Mainnet &&
-      currentNetwork !== FantomNetworks.Mainnet)
+      currentNetwork !== XDCNetworks.Mainnet)
   ) {
     throw new Error(
       'The connected network does not match the selected environment',

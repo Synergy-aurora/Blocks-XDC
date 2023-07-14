@@ -1,28 +1,28 @@
 import { Blockchains } from '@core/enums/blockchains';
-import { FantomNetworks } from './xdc/providers/walletProvider';
+import { XDCNetworks } from './xdc/providers/walletProvider';
 
 const blockchainNetworks = {
   testnet: {
-    [Blockchains.Fantom]: FantomNetworks.Testnet,
+    [Blockchains.XDC]: XDCNetworks.Testnet,
   },
   mainnet: {
-    [Blockchains.Fantom]: FantomNetworks.Mainnet,
+    [Blockchains.XDC]: XDCNetworks.Mainnet,
   },
 };
 
 export const getBlockchainNetwork = (
   blockchain: Blockchains,
   environment: string,
-): FantomNetworks | null => {
+): XDCNetworks | null => {
   return blockchainNetworks[environment]?.[blockchain] || null;
 };
 
 const blockchainNetworkLabels = {
   testnet: {
-    [Blockchains.Fantom]: 'Fantom Nile Testnet',
+    [Blockchains.XDC]: 'Apothem Network',
   },
   mainnet: {
-    [Blockchains.Fantom]: 'Fantom Mainnet',
+    [Blockchains.XDC]: 'XinFin Network',
   },
 };
 

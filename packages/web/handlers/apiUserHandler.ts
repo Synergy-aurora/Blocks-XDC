@@ -22,7 +22,7 @@ export const apiSignInUser = async (
 
     const { blockchain, walletAddress, signature } = params;
 
-    if (blockchain === Blockchains.Fantom) {
+    if (blockchain === Blockchains.XDC) {
       const message = 'Blocks Login';
       const isSignatureValid = verifyXDCSignature(
         message,
