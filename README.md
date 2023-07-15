@@ -11,7 +11,7 @@
 # Blocks: Smart Contracts Manager
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-home.png" alt="Intro Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-connect.png" alt="Intro Screenshot">
 </p>
 
 ## Inspiration
@@ -150,11 +150,11 @@ While we strive to keep the majority of features free so anyone can experience a
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-details" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-details.png" alt="About Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-token" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-token.png" alt="About Screenshot">
 </p>
 
 
