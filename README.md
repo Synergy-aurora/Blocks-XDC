@@ -77,7 +77,7 @@ While we strive to keep the majority of features free so anyone can experience a
 ### Architecture Overview
 
 <p align="center">
-    <img width="600px" src="docs/images/blockfabric-architecture.jpg" alt="">
+    <img width="600px" src="docs/images/blockfabric-architecture.png" alt="">
 </p>
 
 #### Web Application & APIs
@@ -99,7 +99,7 @@ While we strive to keep the majority of features free so anyone can experience a
 ### Process Flow
 
 <p align="center">
-    <img width="600px" src="docs/images/blockfabric-flow.jpg" alt="">
+    <img width="600px" src="docs/images/blockfabric-flow.png" alt="">
 </p>
 
 #### Connect Wallet & Handshaking
