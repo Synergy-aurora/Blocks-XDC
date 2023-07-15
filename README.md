@@ -77,7 +77,7 @@ While we strive to keep the majority of features free so anyone can experience a
 ### Architecture Overview
 
 <p align="center">
-    <img width="600px" src="docs/images/blockfabric-architecture.drawio.png" alt="">
+    <img width="600px" src="docs/images/blocks-architecture.png" alt="">
 </p>
 
 #### Web Application & APIs
@@ -99,7 +99,7 @@ While we strive to keep the majority of features free so anyone can experience a
 ### Process Flow
 
 <p align="center">
-    <img width="600px" src="docs/images/blockfabric-flow.drawio.png" alt="">
+    <img width="600px" src="docs/images/blocks-flow.png" alt="">
 </p>
 
 #### Connect Wallet & Handshaking
@@ -134,15 +134,15 @@ While we strive to keep the majority of features free so anyone can experience a
 ## Screenshots
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-intro.png" alt="Intro Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-home.png" alt="Intro Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-about.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-middle.png" alt="About Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-app-templates.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-connect.png" alt="About Screenshot">
 </p>
 
 <p align="center">
