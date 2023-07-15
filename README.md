@@ -103,7 +103,7 @@ While we strive to keep the majority of features free so anyone can experience a
 </p>
 
 #### Connect Wallet & Handshaking
-- Users first connect to Fantom using a wallet provider like MetaMask. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
+- Users first connect to XDC Blockchain using a wallet provider like XDCPay. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
 
 #### Creating an App
 - Users would create their first app after accessing the platform. An app is a container that will hold and manage the smart contract. Users can create multiple apps.
@@ -118,7 +118,6 @@ While we strive to keep the majority of features free so anyone can experience a
 ## Project Roadmap
 
 **Q2 2023**
-- Participation in Fantom Hackathon
 - Project inception, planning and prototyping
 - MVP product engineering and development
 - Beta launch on mainnet
