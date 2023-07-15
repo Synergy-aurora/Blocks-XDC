@@ -1,17 +1,17 @@
-# Block Fabric
+# Blocks
 
-## Block Fabric simplifies creating, compiling, deploying and managing smart contracts.
+## Blocks simplifies creating, compiling, deploying and managing smart contracts.
 
 **Project Goal**: We want to give anyone the ability to effortlessly create, deploy, manage, and gain insights into their smart contracts. 
 
-**Project Website**: https://www.blockfabric.dev/
+**Project Website**: [website](https://blocks-xdc.vercel.app/)
 
 **Please note**: This alpha version of the application is for testing and development purposes only. The final version may differ significantly in terms of features, appearance, and functionality.
 
-# BlockFabric: Smart Contracts Manager
+# Blocks: Smart Contracts Manager
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-intro.png" alt="Intro Screenshot">
+    <img width="600px" src="web/public/assets/images/screenshot.png" alt="Intro Screenshot">
 </p>
 
 ## Inspiration
@@ -19,21 +19,17 @@
 We asked ourselves:
 "How can we make the power of blockchain technology and smart contracts accessible to everyone, regardless of their technical proficiency?"
 
-The inspiration for Block Fabric comes from the understanding that blockchain technology and smart contracts hold vast potential to revolutionize various aspects of our digital lives. Yet, this potential remains largely untapped because of the technical complexity associated with creating and managing decentralized applications (dApps).
+The inspiration for Blocks comes from the understanding that blockchain technology and smart contracts hold vast potential to revolutionize various aspects of our digital lives. Yet, this potential remains largely untapped because of the technical complexity associated with creating and managing decentralized applications (dApps).
 
 We wanted to provide a solution that didn't just cater to expert developers, but also to non-technical users who have great ideas but lack the coding skills to translate those ideas into functional dApps.
 
-This led us to the conception of Block Fabric - a platform designed to enable anyone to effortlessly create, deploy, manage, and gain insights into their smart contracts. 
+This led us to the conception of Blocks - a platform designed to enable anyone to effortlessly create, deploy, manage, and gain insights into their smart contracts. 
 
 ## About the Project
 
 **Simplified way to manage smart contracts.**
 
-<p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-about.png" alt="">
-</p>
-
-Block Fabric is a user-friendly blockchain app manager for the **Fantom** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
+Blocks is a user-friendly blockchain app manager for the **Fantom** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
 
 With no-code templates, multiple wallet integrations, and robust analytics, it caters to both beginners and advanced users, democratizing access to blockchain technology and paving the way for a more decentralized digital future.
 
@@ -57,7 +53,7 @@ With no-code templates, multiple wallet integrations, and robust analytics, it c
 - Compile your smart contracts directly on the platform.
 
 **Build in Contract Deployer**
-- Deploy on Fantom mainnet and testnet with just a button click.
+- Deploy on XDC mainnet and testnet with just a button click.
 
 **Coming Soon**
 - For advanced users: Build contracts with custom code.
