@@ -29,7 +29,7 @@ This led us to the conception of Blocks - a platform designed to enable anyone t
 
 **Simplified way to manage smart contracts.**
 
-Blocks is a user-friendly blockchain app manager for the **Fantom** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
+Blocks is a user-friendly blockchain app manager for the **XDC Blockchain** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
 
 With no-code templates, multiple wallet integrations, and robust analytics, it caters to both beginners and advanced users, democratizing access to blockchain technology and paving the way for a more decentralized digital future.
 
