@@ -26,6 +26,7 @@ const Footer = () => {
                   src="/assets/icons/email.svg"
                   alt="Email"
                   className={styles.iconWhite}
+                  
                 />
               </a>
             </div>
