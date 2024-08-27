@@ -8,11 +8,11 @@ import MessageDialogContext from '@components/context/MessageDialogContext';
 import MainPanel from '@components/MainPanel/MainPanel';
 import ConfirmDialog from '@components/dialogs/ConfirmDialog/ConfirmDialog';
 import {
-  isWalletConnected as isXDCWalletConnected,
-  getWallet as getXDCWallet,
-  connectWallet as connectXDCWallet,
-  isProviderAvailable as isXDCProviderAvailable,
-  isWalletReady as isXDCWalletReady,
+  isWalletConnected as isEDUWalletConnected,
+  getWallet as getEDUWallet,
+  connectWallet as connectEDUWallet,
+  isProviderAvailable as isEDUProviderAvailable,
+  isWalletReady as isEDUWalletReady,
 } from '@modules/blockchains/edu/providers/walletProvider';
 import logger from '@core/logger/logger';
 import { Config } from '@core/config/config';
@@ -26,7 +26,7 @@ import localStorageHelper from '@core/storage/localStorageHelper';
 import { Environments } from '@core/enums/environments';
 
 const DashboardPage: NextPage = () => {
-  const blockchain = Blockchains.XDC;
+  const blockchain = Blockchains.EDU;
 
   // States
   const [messageDialogTitle, setMessageDialogTitle] = useState('');
@@ -54,9 +54,9 @@ const DashboardPage: NextPage = () => {
       logger.logInfo('init', 'Checking wallet connection.');
 
       // Check if wallet is already connected via SDK
-      const walletConnected = await isXDCWalletConnected();
+      const walletConnected = await isEDUWalletConnected();
       if (walletConnected) {
-        const wallet = await getXDCWallet();
+        const wallet = await getEDUWallet();
 
         logger.logInfo('init', 'Wallet connected on address ' + walletAddress);
 
@@ -94,23 +94,23 @@ const DashboardPage: NextPage = () => {
   }, [walletAddress]);
 
   const handleOnConnectClick = async () => {
-    if (!isXDCProviderAvailable()) {
+    if (!isEDUProviderAvailable()) {
       showMessage(
-        'Install XDCPay',
-        'XDCPay extension is not installed. Please install it from the Chrome Web Store.',
+        'Install EDUPay',
+        'EDUPay extension is not installed. Please install it from the Chrome Web Store.',
       );
       return;
     }
-    if (!isXDCWalletReady()) {
+    if (!isEDUWalletReady()) {
       showMessage(
-        'Open XDC Pay Extension First',
-        'XDCPay is not connected. Please open the extension and connect to a wallet.',
+        'Open EDU Pay Extension First',
+        'EDUPay is not connected. Please open the extension and connect to a wallet.',
       );
       return;
     }
 
-    await connectXDCWallet();
-    const wallet = await getXDCWallet();
+    await connectEDUWallet();
+    const wallet = await getEDUWallet();
     const walletAddress = wallet?.address;
 
     if (walletAddress) {

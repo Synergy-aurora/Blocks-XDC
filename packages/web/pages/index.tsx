@@ -32,9 +32,9 @@ const MainLanding: NextPage = () => {
                   Create . Deploy . View Insights
                 </div>
                 <p>
-                  Blocks is an advanced blockchain app manager that lets
-                  you create, deploy, manage and understand usage for your smart
-                  contracts on XDC blockchain.
+                  Blocks is an advanced blockchain app manager that lets you
+                  create, deploy, manage and understand usage for your smart
+                  contracts on open Campus Codex blockchain.
                 </p>
                 <div style={{ paddingTop: 30 }}>
                   <Button
@@ -76,14 +76,13 @@ const MainLanding: NextPage = () => {
                     Just connect your wallet and you're good to go.
                   </h3>
                   <p className="paragraph">
-                    Blocks makes dapp creation a breeze. Create smart
-                    contracts using preset templates without code, or create
-                    your own custom template. Import existing contracts, manage
-                    dapps centrally, and link multiple wallets. Leverage robust
+                    Blocks makes dapp creation a breeze. Create smart contracts
+                    using preset templates without code, or create your own
+                    custom template. Import existing contracts, manage dapps
+                    centrally, and link multiple wallets. Leverage robust
                     analytics for insightful app performance.
                   </p>
                 </div>
-               
               </Col>
             </Row>
           </div>
@@ -124,19 +123,64 @@ const MainLanding: NextPage = () => {
               <Card body>
                 <Card.Title>One-Time Subscription</Card.Title>
                 <Card.Subtitle className="mb-2">
-                  Accept one time payments for product subscription.
+                  A One Time Subscription Contract manages product subscriptions
+                  on the blockchain. It allows users to purchase products once,
+                  and owners to add products and set prices.
                 </Card.Subtitle>
               </Card>
             </Col>
             <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
               <Card body>
-                <Card.Title>Supply Chain Management</Card.Title>
+                <Card.Title>Escrow Contract</Card.Title>
                 <Card.Subtitle className="mb-2">
-                  Track and verify products at each stage of a supply chain.
+                  An Escrow Contract holds funds until the contract conditions
+                  are met, ensuring fair transactions between buyers and
+                  sellers.
                 </Card.Subtitle>
               </Card>
             </Col>
           </Row>
+          <Row className="feature-cards">
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Charity Fund Contract</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  A Charity Fund Contract allows users to make donations and
+                  enables the contract owner to withdraw the funds collected.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Voting Contract</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  A Voting Contract allows for the creation of candidates and
+                  voting on them. It ensures that each address can only vote
+                  once.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Royalty Distribution</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  A Royalty Distribution Contract manages and distributes
+                  royalties to recipients as defined by the contract owner.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6} md={6} lg={3} className="feature-card template">
+              <Card body>
+                <Card.Title>Token Vesting</Card.Title>
+                <Card.Subtitle className="mb-2">
+                  A Token Vesting Contract manages the release of tokens over
+                  time, with a cliff period before vesting starts and a defined
+                  vesting duration.
+                </Card.Subtitle>
+              </Card>
+            </Col>
+          </Row>
+
           <Row className="section-container" style={{ minHeight: 'auto' }}>
             <Col md={12} sm={12}>
               <p className="section-subheading">
@@ -276,7 +320,7 @@ const MainLanding: NextPage = () => {
                     Be among the first to experience our beta preview and
                     experience a new way of creating and deploying smart
                     contracts. We welcome your valuable feedback as it can
-                    significantly shape Block Fabric's future.{' '}
+                    significantly shape Block's future.{' '}
                   </p>
                 </div>
                 <div>
