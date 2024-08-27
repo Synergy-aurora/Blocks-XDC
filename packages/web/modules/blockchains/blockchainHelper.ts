@@ -1,5 +1,5 @@
 import { Blockchains } from '@core/enums/blockchains';
-import { XDCNetworks } from './xdc/providers/walletProvider';
+import { XDCNetworks } from './edu/providers/walletProvider';
 
 const blockchainNetworks = {
   testnet: {

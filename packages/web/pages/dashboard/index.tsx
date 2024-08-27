@@ -13,7 +13,7 @@ import {
   connectWallet as connectXDCWallet,
   isProviderAvailable as isXDCProviderAvailable,
   isWalletReady as isXDCWalletReady,
-} from '@modules/blockchains/xdc/providers/walletProvider';
+} from '@modules/blockchains/edu/providers/walletProvider';
 import logger from '@core/logger/logger';
 import { Config } from '@core/config/config';
 import {

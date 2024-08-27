@@ -1,7 +1,7 @@
 {
-  "name": "blockfabric-contract-templates",
+  "name": "block-contract-templates",
   "version": "1.0.0",
-  "description": "Smart Contracrt Templates for Block Fabric",
+  "description": "Smart Contracrt Templates for Blocks",
   "main": "index.ts",
   "types": "index.d.ts",
   "scripts": {

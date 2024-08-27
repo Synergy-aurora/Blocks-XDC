@@ -1,4 +1,4 @@
 export enum Environments {
-  Testnet = 'Apothem',
-  Mainnet = 'XinFin',
+  Testnet = 'EDU Testnet',
+  Mainnet = 'EDU Mainnet',
 }

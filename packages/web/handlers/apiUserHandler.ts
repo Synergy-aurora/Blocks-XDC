@@ -4,7 +4,7 @@ import { generateToken } from '@modules/jwt/jwtHelper';
 import { generateUUID } from '@core/helpers/generateHelper';
 import { Blockchains } from '@core/enums/blockchains';
 import { FirestoreDB } from '@modules/firebase/firestore';
-import { verifyXDCSignature } from '@modules/blockchains/xdc/verification/verification';
+import { verifyEDUSignature } from '@modules/blockchains/edu/verification/verification';
 import { UserWallet } from '@core/entities/userWallet';
 import { getCurrentTimestamp } from '@core/helpers/datetimeHelper';
 
@@ -22,9 +22,9 @@ export const apiSignInUser = async (
 
     const { blockchain, walletAddress, signature } = params;
 
-    if (blockchain === Blockchains.XDC) {
+    if (blockchain === Blockchains.EDU) {
       const message = 'Blocks Login';
-      const isSignatureValid = verifyXDCSignature(
+      const isSignatureValid = verifyEDUSignature(
         message,
         signature,
         walletAddress,
