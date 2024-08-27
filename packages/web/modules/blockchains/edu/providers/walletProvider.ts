@@ -23,17 +23,17 @@ export const isWalletConnected = (): boolean => {
   return window.ethereum?.selectedAddress;
 };
 
-export interface XDCWallet {
+export interface EDUWallet {
   address: string;
-  network: XDCNetworks;
+  network: EDUNetworks;
 }
 
-export enum XDCNetworks {
-  Mainnet = 'XinFin',
-  Testnet = 'Apothem',
+export enum EDUNetworks {
+  Mainnet = 'EDU Mainnet',
+  Testnet = 'EDU Testnet',
 }
 
-export const getWallet = async (): Promise<XDCWallet | null> => {
+export const getWallet = async (): Promise<EDUWallet | null> => {
   const isConnected = isWalletConnected();
   if (isConnected) {
     return {
@@ -45,10 +45,10 @@ export const getWallet = async (): Promise<XDCWallet | null> => {
   }
 };
 
-export const getNetwork = (): XDCNetworks => {
-  return window.ethereum.networkVersion === '51'
-    ? XDCNetworks.Testnet
-    : XDCNetworks.Mainnet;
+export const getNetwork = (): EDUNetworks => {
+  return window.ethereum.networkVersion === '656476'
+    ? EDUNetworks.Testnet
+    : EDUNetworks.Mainnet;
 };
 
 export const maskWalletAddress = (address: string): string => {
@@ -78,10 +78,10 @@ export const getExplorerAddressUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.Testnet) {
-    return `https://explorer.apothem.network/address/${hash}`;
+    return `https://opencampus-codex.blockscout.com/${hash}`;
   }
   if (environment === Environments.Mainnet) {
-    return `https://explorer.xinfin.network/address/${hash}`;
+    return `https://opencampus-codex.blockscout.com/${hash}`;
   }
   return null;
 };
@@ -91,10 +91,10 @@ export const getExplorerTxUrl = (
   hash: string,
 ): string => {
   if (environment === Environments.Testnet) {
-    return `https://explorer.apothem.network/tx/${hash}`;
+    return `https://opencampus-codex.blockscout.com/txs/${hash}`;
   }
   if (environment === Environments.Mainnet) {
-    return `https://explorer.xinfin.network/tx/${hash}`;
+    return `https://opencampus-codex.blockscout.com/txs/${hash}`;
   }
   return null;
 };
@@ -128,9 +128,9 @@ export const deployContract = async (
   // check if the network matches the selected environment
   if (
     (environment === Environments.Testnet &&
-      currentNetwork !== XDCNetworks.Testnet) ||
+      currentNetwork !== EDUNetworks.Testnet) ||
     (environment === Environments.Mainnet &&
-      currentNetwork !== XDCNetworks.Mainnet)
+      currentNetwork !== EDUNetworks.Mainnet)
   ) {
     throw new Error(
       'The connected network does not match the selected environment',
