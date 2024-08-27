@@ -34,7 +34,7 @@ const MainLanding: NextPage = () => {
                 <p>
                   Blocks is an advanced blockchain app manager that lets you
                   create, deploy, manage and understand usage for your smart
-                  contracts on open Campus Codex blockchain.
+                  contracts on Open Campus Codex blockchain.
                 </p>
                 <div style={{ paddingTop: 30 }}>
                   <Button

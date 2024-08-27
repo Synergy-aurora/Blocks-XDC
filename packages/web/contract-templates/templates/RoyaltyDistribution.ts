@@ -9,7 +9,8 @@ pragma solidity 0.8.18;
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract {{contractName}} is Ownable {
-    mapping(address => uint256) public royalties;
+   mapping(address => uint256) public royalties;
+    address[] public royaltyRecipients;
     uint256 public totalRoyalties;
 
     event RoyaltySet(address indexed recipient, uint256 amount);
@@ -17,6 +18,10 @@ contract {{contractName}} is Ownable {
 
     function setRoyalty(address recipient, uint256 amount) public onlyOwner {
         require(amount > 0, "Royalty must be greater than 0");
+
+        if (royalties[recipient] == 0) {
+            royaltyRecipients.push(recipient);
+        }
 
         royalties[recipient] = amount;
         emit RoyaltySet(recipient, amount);
@@ -26,7 +31,8 @@ contract {{contractName}} is Ownable {
         uint256 balance = address(this).balance;
         require(balance > 0, "No funds available");
 
-        for (address recipient : _getRoyaltyRecipients()) {
+        for (uint256 i = 0; i < royaltyRecipients.length; i++) {
+            address recipient = royaltyRecipients[i];
             uint256 amount = royalties[recipient];
             if (amount > 0) {
                 payable(recipient).transfer(amount);
@@ -36,8 +42,8 @@ contract {{contractName}} is Ownable {
         emit RoyaltiesDistributed(balance);
     }
 
-    function _getRoyaltyRecipients() private view returns (address[] memory) {
-        // Implement logic to return all recipients
+    function getRoyaltyRecipients() external view returns (address[] memory) {
+        return royaltyRecipients;
     }
 }
 `;

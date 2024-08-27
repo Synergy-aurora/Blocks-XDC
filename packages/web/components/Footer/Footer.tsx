@@ -9,15 +9,12 @@ const Footer = () => {
         <Row>
           <Col lg={4} md={4}>
             <div className={styles.brand}>
-              <img
-                src="/assets/blocks/logo.png"
-                alt="Blocks"
-              />
+              <img src="/assets/blocks/logo.png" alt="Blocks" />
             </div>
             <p className={styles.appDescription}>
-              Blocks is a blockchain app manager that lets you create,
-              manage and view analytics for all your smart contracts on the
-              blockchain.
+              Blocks is a blockchain app manager that lets you create, manage
+              and view analytics for all your smart contracts on the Open Campus
+              Codex.
             </p>
             <div className={styles.label}>Connect with us</div>
             <div className={styles.followUs}>
@@ -26,7 +23,6 @@ const Footer = () => {
                   src="/assets/icons/email.svg"
                   alt="Email"
                   className={styles.iconWhite}
-                  
                 />
               </a>
             </div>

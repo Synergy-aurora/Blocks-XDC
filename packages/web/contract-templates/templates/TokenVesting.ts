@@ -32,7 +32,7 @@ contract {{contractName}} is Ownable {
     function releaseTokens() public {
         VestingSchedule storage schedule = vestingSchedules[msg.sender];
         require(schedule.totalAmount > 0, "No vesting schedule found");
-        
+
         uint256 vestedAmount = _calculateVestedAmount(msg.sender);
         uint256 unreleasedAmount = vestedAmount - schedule.releasedAmount;
 
