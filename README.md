@@ -1,159 +1,216 @@
+
 # Blocks
 
-## Blocks simplifies creating, compiling, deploying and managing smart contracts.
+## Revolutionizing Smart Contract Creation, Deployment and Management on Open Campus Codex Blockchain
 
-**Project Goal**: We want to give anyone the ability to effortlessly create, deploy, manage, and gain insights into their smart contracts. 
+**Blocks** is an innovative platform designed to simplify the creation, deployment, and management of smart contracts on the **Open Campus Codex Blockchain**. Our goal is to empower users—regardless of technical background—to seamlessly navigate the world of blockchain technology.
 
-**Project Website**: [website](https://blocks-xdc.vercel.app/)
+**Project Website**: [Explore Blocks](https://blocks-edu.vercel.app/)
 
-**Please note**: This alpha version of the application is for testing and development purposes only. The final version may differ significantly in terms of features, appearance, and functionality.
+**Note**: This alpha release is intended for testing and development. Expect significant enhancements and additional features in the final version.
 
-# Blocks: Smart Contracts Manager
+---
+
+## Introducing Blocks: Your Smart Contracts Hub
 
 <p align="center">
     <img width="600px" src="docs/screenshots/blocks-connect.png" alt="Intro Screenshot">
 </p>
 
-## Inspiration
+### Inspiration
 
-We asked ourselves:
-"How can we make the power of blockchain technology and smart contracts accessible to everyone, regardless of their technical proficiency?"
+We posed a crucial question: *"How can we democratize blockchain technology and smart contracts, making them accessible to everyone, regardless of their technical skills?"*
 
-The inspiration for Blocks comes from the understanding that blockchain technology and smart contracts hold vast potential to revolutionize various aspects of our digital lives. Yet, this potential remains largely untapped because of the technical complexity associated with creating and managing decentralized applications (dApps).
+The answer was **Blocks**—a platform born from the recognition that while blockchain technology promises transformative potential, its complexity often hinders its widespread adoption. We envisioned a tool that bridges the gap between sophisticated blockchain capabilities and users with no technical background, providing them with an intuitive and accessible interface to bring their decentralized applications (dApps) to life.
 
-We wanted to provide a solution that didn't just cater to expert developers, but also to non-technical users who have great ideas but lack the coding skills to translate those ideas into functional dApps.
+### About Blocks
 
-This led us to the conception of Blocks - a platform designed to enable anyone to effortlessly create, deploy, manage, and gain insights into their smart contracts. 
+**Blocks** is a user-friendly smart contract manager tailored for the **Open Campus Codex Blockchain**. It offers an intuitive platform for creating, deploying, managing, and analyzing smart contracts, making blockchain technology accessible to both novices and seasoned developers.
 
-## About the Project
+With features like no-code templates, multi-wallet integrations, and comprehensive analytics, **Blocks** is set to democratize blockchain development and pave the way for a more decentralized digital future.
 
-**Simplified way to manage smart contracts.**
+---
 
-Blocks is a user-friendly blockchain app manager for the **XDC Blockchain** blockchain. It enables effortless creation, deployment, management, and analysis of smart contracts for both beginners and expert blockchain engineers. 
-
-With no-code templates, multiple wallet integrations, and robust analytics, it caters to both beginners and advanced users, democratizing access to blockchain technology and paving the way for a more decentralized digital future.
-
-## Features
+## Key Features
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-features.png" alt="">
+    <img width="600px" src="docs/screenshots/screenshot-features.png" alt="Features Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-templates.png" alt="">
+    <img width="600px" src="docs/screenshots/screenshot-templates.png" alt="Templates Screenshot">
 </p>
 
-**No Code Contract Builder**
-- Build your contracts from a growing collection of preset templates you can use and customize, no coding required.
+**No-Code Contract Builder**
+- Effortlessly build and customize smart contracts using our extensive collection of pre-designed templates—no coding required.
 
 **App Manager**
-- Create multiple apps, each having their own smart contract properly organized providing you with a holistic view of your dapps.
+- Create and manage multiple dApps, each with its own set of smart contracts, providing a comprehensive view of your blockchain projects.
 
-**Build in Solidity Compiler**
-- Compile your smart contracts directly on the platform.
+**Integrated Solidity Compiler**
+- Compile your smart contracts directly within the platform, streamlining the development process.
 
-**Build in Contract Deployer**
-- Deploy on XDC mainnet and testnet with just a button click.
+**One-Click Deployment**
+- Deploy your contracts on the Open Campus Codex mainnet and testnet with a single click.
 
-**Coming Soon**
-- For advanced users: Build contracts with custom code.
-- Import existing contracts that has been deployed.
-- Link multiple wallets
-- App version management
-- Contract Analytics and Insights
+**Upcoming Enhancements**
+- Advanced code editor for custom contract development.
+- Import and manage existing contracts.
+- Multi-wallet support.
+- App version management.
+- Advanced contract analytics and insights.
+
+---
+
+---
+
+## Available Smart Contract Templates
+
+**Blocks** offers a range of smart contract templates to suit various needs. Here are some of the templates available on our platform:
+
+**1. One-Time Subscription Contract**
+- **Description**: Manage product subscriptions with one-time payments. Owners can add products, set prices, and users can subscribe by paying the set price.
+- **Key Features**: Product management, subscription tracking, and fund withdrawal.
+
+**2. Supply Chain Management Contract**
+- **Description**: Track and verify products at each stage of a supply chain. Ideal for businesses looking to enhance transparency and traceability.
+- **Key Features**: Product tracking, verification, and data recording.
+
+**3. Token Sale Contract**
+- **Description**: Facilitate fundraising by selling a token at a specified rate. Perfect for launching new tokens and raising capital.
+- **Key Features**: Token purchasing, rate management, and fund withdrawal.
+
+**4. Royalty Distribution Contract**
+- **Description**: Manage and distribute royalties to multiple recipients. Allows setting and distributing royalties based on predefined criteria.
+- **Key Features**: Royalty setting, distribution management, and recipient tracking.
+
+**5. Crowdfunding Contract**
+- **Description**: Raise funds for projects through a crowdfunding model. Allows contributions from multiple users and tracks funding progress.
+- **Key Features**: Campaign creation, fund collection, and contribution tracking.
+
+**6. Voting Contract**
+- **Description**: Implement decentralized voting systems for proposals or elections. Supports anonymous and tamper-proof voting.
+- **Key Features**: Proposal management, voting process, and result tallying.
+
+**7. Identity Verification Contract**
+- **Description**: Manage and verify user identities on the blockchain. Useful for applications requiring verified user credentials.
+- **Key Features**: Identity registration, verification, and access control.
+
+**8. Licensing Contract**
+- **Description**: Issue and manage licenses for digital assets or services. Tracks license issuance and usage.
+- **Key Features**: License creation, tracking, and enforcement.
+
+**9. Escrow Contract**
+- **Description**: Facilitate secure transactions by holding funds in escrow until predefined conditions are met.
+- **Key Features**: Escrow management, condition checks, and fund release.
+
+**10. Rental Agreement Contract**
+- **Description**: Manage rental agreements for assets or properties. Supports rental payments and agreement enforcement.
+- **Key Features**: Rental terms management, payment tracking, and contract enforcement.
+
+**10. And Many More Coming Soon..**
+
+---
 
 ## Business Model
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/screenshot-pricing.png" alt="">
+    <img width="600px" src="docs/screenshots/screenshot-pricing.png" alt="Pricing Screenshot">
 </p>
 
-While we strive to keep the majority of features free so anyone can experience and use BlockFabric, we plan to introduce a freemium model in the future to sustain the project's development. The platform will still remain free for basic use, and allows unlimited restrictions for paid users.
+While **Blocks** will continue to offer a wealth of features for free, we plan to introduce a freemium model to support ongoing development. Basic functionalities will remain free, with premium options available for advanced features.
 
-**Community Contributed Templates**: We are also considering to open up our templates collection so other developers can build and share their templates and possibly earn commission from their use.
+**Community-Contributed Templates**: We're exploring ways to allow developers to contribute their own templates, potentially earning from their usage.
+
+---
 
 ## Technical Details
 
 ### Architecture Overview
 
 <p align="center">
-    <img width="600px" src="docs/images/blocks-architecture.png" alt="">
+    <img width="600px" src="docs/images/blocks-architecture.png" alt="Architecture Overview">
 </p>
 
 #### Web Application & APIs
-
-- The frontend Web Application is developed in **React** using the **NextJS** framework. The authentication and core APIs are developed in NodeJS.
-- These applications are hosted on [Vercel](https://www.vercel.com).
+- The front-end is crafted in **React** with **NextJS**, while core functionalities are powered by NodeJS. Our applications are hosted on [Vercel](https://www.vercel.com).
 
 #### Compiler
-- [Solidity Compiler (Solc)](https://www.npmjs.com/package/solc) is used for compiling Solidity code into Contract Application Binary Image (ABI) and byte code.
+- We utilize [Solidity Compiler (Solc)](https://www.npmjs.com/package/solc) to transform Solidity code into Contract Application Binary Interface (ABI) and bytecode.
 
 #### Contract Interactions/Deployments
-- [Web3.js](https://github.com/web3/web3.js) is the library we use for all contract interactions, including deployments.
+- [Web3.js](https://github.com/web3/web3.js) handles all contract interactions and deployments.
 
 #### Offchain Database
-
-- The offchain database is used to store the encrypted messages and various operations of the application. 
-- The database is hosted on [Google Firebase](https://firebase.google.com) using the Firestore service.
+- Encrypted messages and application operations are stored in our offchain database hosted on [Google Firebase](https://firebase.google.com) using Firestore.
 
 ### Process Flow
 
 <p align="center">
-    <img width="600px" src="docs/images/blocks-flow.png" alt="">
+    <img width="600px" src="docs/images/blocks-flow.png" alt="Process Flow">
 </p>
 
-#### Connect Wallet & Handshaking
-- Users first connect to XDC Blockchain using a wallet provider like XDCPay. After connecting, user then signs a message to the Authentication API, which verifies the signed message and returns a generated JWT token for access to the Core API.
+#### Wallet Connection & Authentication
+- Users connect to the Open Campus Codex Blockchain via wallet providers like MetaMask, sign a message for authentication, and receive a JWT token for API access.
 
-#### Creating an App
-- Users would create their first app after accessing the platform. An app is a container that will hold and manage the smart contract. Users can create multiple apps.
+#### App Creation
+- Users create their first app—an organized container for managing smart contracts. Multiple apps can be created and managed.
 
-#### Contract Details & Compilation
-- Setting up an app is quick easy with only a few steps: selecting mode (build from template, custom code, or existing contract import).
-- In Build from Template, the steps would require selecting a template, entering contract details, review generated code and compile.
+#### Contract Setup & Compilation
+- Setting up a contract is streamlined: select a template, customize details, review and compile the code.
 
-#### Publishing
-- Once a contract is compiled within an app, it can be deployed with just a click. Apps deployed can then collect tranasction data from the blockchain for insights and analytics.
+#### Deployment
+- Deploy compiled contracts with a single click. Monitor transaction data and gain insights from the blockchain.
+
+---
 
 ## Project Roadmap
 
-**Q2 2023**
-- Project inception, planning and prototyping
-- MVP product engineering and development
-- Beta launch on mainnet
+**Q4 2024**
+- Project initiation, planning, and prototyping
+- MVP development and beta launch on mainnet
 
-**Q3 & Q4 2023**
-- Feature implementation and refinements
-    - Version management, wallet management, analytics and insights
+**Q1 & Q2 2025**
+- Feature expansion and refinement
+    - Version management, wallet management, analytics, and insights
     - Contract import and custom code
-    - More preset templates
+    - Additional templates
 - Public outreach and marketing
-- Launch of complete and stable version on mainnet
+- Full launch of the stable version on mainnet
+
+---
 
 ## Screenshots
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-home.png" alt="Intro Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-home.png" alt="Home Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-middle.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-middle.png" alt="Middle Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-connect.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-connect.png" alt="Connect Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-contract.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-contract.png" alt="Contract Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-details.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-details.png" alt="Details Screenshot">
 </p>
 
 <p align="center">
-    <img width="600px" src="docs/screenshots/blocks-token.png" alt="About Screenshot">
+    <img width="600px" src="docs/screenshots/blocks-token.png" alt="Token Screenshot">
 </p>
+
+---
+
+With **Blocks**, we are not just building a tool but fostering a new era of accessibility and innovation in blockchain technology. We invite you to join us in this transformative journey.
+
+---
+
 
 
