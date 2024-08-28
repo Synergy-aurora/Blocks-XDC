@@ -235,7 +235,7 @@ export default function Overview({
       <DeployDialog
         show={showDeployDialog}
         app={currentApp}
-        blockchain={Blockchains.XDC}
+        blockchain={Blockchains.EDU}
         environment={deployEnvironment}
         onCancel={() => setShowDeployDialog(false)}
         onDeploy={(gasLimit, args) => deploy(gasLimit, args)}
