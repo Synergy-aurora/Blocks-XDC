@@ -29,7 +29,7 @@ const MainLanding: NextPage = () => {
                   </div>
                 </h1>
                 <div className={styles.subtitle}>
-                  Create . Deploy . View Insights
+                  Create . Deploy . Manage
                 </div>
                 <p>
                   Blocks is an advanced blockchain app manager that lets you
