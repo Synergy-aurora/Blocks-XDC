@@ -1,8 +1,7 @@
-Sure! Here's the revised README for the **Blocks** project, incorporating detailed responses to the judging criteria:
 
----
 
-# Blocks
+## Testing locally
+Please copy service key @ https://drive.google.com/file/d/1ayspfA_H3HE9QLXTzjqm4eWO826KIkaW/view?usp=sharing  Replace file at serviceKey.json with copied file.
 
 ## Revolutionizing Smart Contract Creation, Deployment, and Management on Open Campus Codex Blockchain
 
